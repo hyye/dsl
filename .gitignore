@@ -1,0 +1,5 @@
+.vscode
+.idea
+build*
+cmake-*
+.DS_Store

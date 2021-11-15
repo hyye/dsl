@@ -1,0 +1,17 @@
+add_library(dsl_full_system
+full_system.cc
+full_system_tracing.cc
+full_system_tracking.cc
+full_system_activate_points.cc
+full_system_optimize.cc
+full_system_marginalize.cc
+optimization_call_back.cc
+pixel_selector.cc
+distance_initializer.cc
+coarse_tracker.cc
+coarse_distance_map.cc
+ef_struct.cc
+hessian_blocks.cc
+immature_point.cc
+residual.cc
+)

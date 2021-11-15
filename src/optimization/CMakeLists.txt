@@ -1,0 +1,7 @@
+add_library(dsl_cost_functor
+photo_cost_functor.cc
+homo_cost_functor.cc
+marginalization_factor.cc
+se3_prior_cost_functor.cc
+parameter_map.cc
+)

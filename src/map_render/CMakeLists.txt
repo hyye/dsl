@@ -1,0 +1,13 @@
+add_library(dsl_map_render
+gui.cc
+pangolin_utils.cc
+pcl_utils.cc
+data_loader.cc
+yaml_loader.cc
+shaders/parse.cc
+shaders/vertex.cc
+shaders/feedback_buffer.cc
+core/gpu_texture.cc
+core/index_map.cc
+core/global_model.cc
+)
