@@ -1,7 +1,31 @@
 # DSL
+Project page: https://sites.google.com/view/dsl-ram-lab/
 
 ## Monocular Direct Sparse Localization in a Prior 3D Surfel Map
 #### Authors: Haoyang Ye, Huaiyang Huang, and Ming Liu from [RAM-LAB](https://ram-lab.com/).
+
+## Paper and Video
+Related publications:
+```
+@inproceedings{ye2020monocular,
+  title={Monocular direct sparse localization in a prior 3d surfel map},
+  author={Ye, Haoyang and Huang, Huaiyang and Liu, Ming},
+  booktitle={2020 IEEE International Conference on Robotics and Automation (ICRA)},
+  pages={8892--8898},
+  year={2020},
+  organization={IEEE}
+}
+@inproceedings{ye20213d,
+  title={3D Surfel Map-Aided Visual Relocalization with Learned Descriptors},
+  author={Ye, Haoyang and Huang, Huaiyang and Hutter, Marco and Sandy, Timothy and Liu, Ming},
+  booktitle={2021 International Conference on Robotics and Automation (ICRA)},
+  pages={5574-5581},
+  year={2021},
+  organization={IEEE}
+}
+```
+Video:
+https://www.youtube.com/watch?v=LTihCBGcURo
 
 ## Dependency
 1. [Pangolin](https://github.com/stevenlovegrove/Pangolin).
@@ -30,6 +54,11 @@ To run the example:
 4. Extract and undistort images into `[path_to_dataset]/images`.
 5. Set the first camera pose to `initial_pose` and other camera parameters in `[path_to_dataset]/config.yaml`.
 
-## Todo:
-- [ ] Add neighbor covisible keyframes
-- [ ] SuperPoint/SIFT matcher?
+## Note
+This implementation of DSL takes [Ceres Solver](http://ceres-solver.org/) as backend, which is different from the the implementation of the original paper with DSO-backend. This leads to different performance, i.e., speed and accuracy, compared to the reported results.
+
+## Credits
+This work is inspired from several open-source projects, such as [DSO](https://github.com/JakobEngel/dso), [DSM](https://github.com/jzubizarreta/dsm), [Elastic-Fusion](https://github.com/mp3guy/ElasticFusion), [SuperPoint](https://github.com/magicleap/SuperPointPretrainedNetwork), [DBoW2](https://github.com/dorian3d/DBoW2), [NetVlad](https://www.di.ens.fr/willow/research/netvlad/), [LIO-mapping](https://github.com/hyye/lio-mapping) and etc.
+
+## Licence
+The source code is released under [GPL-3.0](https://www.gnu.org/licenses/).
