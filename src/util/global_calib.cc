@@ -29,6 +29,8 @@
 
 #include "util/global_calib.h"
 
+#include <iostream>
+
 namespace dsl {
 int wG[PYR_LEVELS], hG[PYR_LEVELS];
 float fxG[PYR_LEVELS], fyG[PYR_LEVELS], cxG[PYR_LEVELS], cyG[PYR_LEVELS];
