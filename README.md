@@ -35,6 +35,7 @@ https://www.youtube.com/watch?v=LTihCBGcURo
 5. [OpenCV](https://docs.opencv.org/master/d7/d9f/tutorial_linux_install.html), the default version accompanying by ROS.
 
 ## Build
+0. `git submodule update --init --recursive`
 1. `mkdir build && cd build`
 2. `cmake .. -DCMAKE_BUILD_TYPE=RelWithDebInfo` 
 3. `make -j8`
