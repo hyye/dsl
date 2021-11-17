@@ -30,6 +30,8 @@
 #include "tool/euroc_reader.h"
 #include <boost/filesystem.hpp>
 
+#include <iostream>
+
 namespace fs = boost::filesystem;
 
 namespace dsl {

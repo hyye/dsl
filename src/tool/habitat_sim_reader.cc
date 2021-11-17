@@ -29,6 +29,8 @@
 
 #include "tool/habitat_sim_reader.h"
 
+#include <iostream>
+
 namespace dsl {
 
 HabitatSimReader::HabitatSimReader(

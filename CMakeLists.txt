@@ -22,8 +22,8 @@ include_directories(${EIGEN3_INCLUDE_DIR})
 find_package(Boost REQUIRED COMPONENTS system filesystem thread)
 include_directories(${Boost_INCLUDE_DIRS})
 
-list(APPEND CMAKE_PREFIX_PATH "/mnt/HDD/Softwares/opencv-3.4.11/install/share/OpenCV")
-find_package(OpenCV 3.4.11 REQUIRED CONFIG)
+# list(APPEND CMAKE_PREFIX_PATH "/mnt/HDD/Softwares/opencv-3.4.11/install/share/OpenCV")
+find_package(OpenCV REQUIRED)
 find_package(Ceres REQUIRED)
 find_package(PCL REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
@@ -81,7 +81,7 @@ ${OpenCV_LIBRARIES}
 ${PCL_LIBRARIES}
 ${Pangolin_LIBRARIES}
 ${CUDA_LIBRARIES}
-${TORCH_LIBRARIES}
+# ${TORCH_LIBRARIES}
 )
 
 enable_testing()
@@ -96,4 +96,4 @@ set(CUDA_ARCH_BIN "30 35 50 52 61" CACHE STRING "Specify 'real' GPU arch to buil
 set(CUDA_ARCH_PTX "" CACHE STRING "Specify 'virtual' PTX arch to build PTX intermediate code for. Example: 1.0 1.2 or 10 12")
 
 add_subdirectory(src)
-add_subdirectory(test)
+# add_subdirectory(test)
