@@ -39,10 +39,10 @@ include_directories(${Boost_INCLUDE_DIRS})
 find_package(CUDA REQUIRED)
 include_directories(${CUDA_INCLUDE_DIRS})
 
-list(APPEND CMAKE_PREFIX_PATH "${PROJECT_SOURCE_DIR}/3rdparty/libtorch/")
-find_package(Torch REQUIRED)
-include_directories(${TORCH_INCLUDE_DIRS})
-message(${TORCH_INCLUDE_DIRS})
+# list(APPEND CMAKE_PREFIX_PATH "${PROJECT_SOURCE_DIR}/3rdparty/libtorch/")
+# find_package(Torch REQUIRED)
+# include_directories(${TORCH_INCLUDE_DIRS})
+# message(${TORCH_INCLUDE_DIRS})
 
 set(3rdparty_INCLUDE_DIRS
 3rdparty/googletest/googletest/include
